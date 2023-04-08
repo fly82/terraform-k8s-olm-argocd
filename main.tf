@@ -29,6 +29,16 @@ resource "kind_cluster" "default" {
       role = "worker"
     }
 
+    # networking {
+    #   ip_family           = null
+    #   api_server_address  = null
+    #   api_server_port     = null
+    #   pod_subnet          = null
+    #   service_subnet      = null
+    #   disable_default_cni = null
+    #   kube_proxy_mode     = null
+    # }
+
     # containerd_config_patches = concat([], [
     #  <<-TOML
     #  TOML
