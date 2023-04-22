@@ -15,7 +15,7 @@ provider "kind" {}
 
 resource "kind_cluster" "default" {
   name = "cluster-1"
-  node_image = "kindest/node:v1.26.3"
+  node_image = "kindest/node:v1.27.1"
   wait_for_ready = true
   kind_config {
     kind = "Cluster"
